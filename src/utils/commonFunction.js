@@ -12,6 +12,8 @@ export const handleFilterJourney = (journeyList, selectedArrivalTime) => {
   const filtered = journeyList.filter((d) => {
     if (moment(d.legs[0]['arrival']).format(moment().format('DD/MM/YYYY, h:mm:ss')) === selectedArrivalTime)
       return d;
+    else
+      return null;
   })
 
   return filtered;

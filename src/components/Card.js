@@ -27,7 +27,8 @@ const Card = ({ journey }) => {
                   >
                     {d}
                   </span>)
-              }       
+              }
+              return null     
           })}
         </div>
       </div>

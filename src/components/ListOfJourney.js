@@ -8,7 +8,7 @@ const ListOfJourney = ({journeyList, setAvailableArrivalTime, selectedArrivalTim
 
   useEffect(() => {
     journeyList?.length && handleDateTime(journeyList, setAvailableArrivalTime);
-  }, [journeyList])
+  }, [journeyList, setAvailableArrivalTime])
 
   useEffect(() => {
     let filterJourney = [];
